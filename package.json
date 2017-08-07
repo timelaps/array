@@ -1,0 +1,30 @@
+{
+  "name": "@timelaps/array",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "share": "npm version patch && git push && npm publish"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/timelaps/array.git"
+  },
+  "keywords": [],
+  "author": "Michael McLaughlin <michael@gospecless.com> (https://gospecless.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/timelaps/array/issues"
+  },
+  "homepage": "https://github.com/timelaps/array#readme",
+  "devDependencies": {
+    "@timelaps/batterie": "^1.0.70"
+  },
+  "dependencies": {
+    "@timelaps/fn": "^1.0.1",
+    "@timelaps/is": "^1.0.7",
+    "@timelaps/object": "^1.0.2",
+    "@timelaps/to": "^1.0.1"
+  }
+}

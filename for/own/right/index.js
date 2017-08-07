@@ -1,0 +1,1 @@
+module.exports = require('../../../base/each')(require('@timelaps/object/iterate/own'), require('../../each/right'));
