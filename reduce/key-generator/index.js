@@ -1,5 +1,5 @@
 var isObject = require('@timelaps/is/object');
-var objectKeyGenerator = require('@timelaps/object/keys/generator');
+var objectKeyGenerator = require('@timelaps/n/keys/generator');
 var isArrayLike = require('@timelaps/is/array-like');
 var arrayKeyGenerator = require('@timelaps/fn/generator');
 var noop = require('@timelaps/fn/noop');
