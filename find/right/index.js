@@ -1,2 +1,2 @@
 var secondToIterable = require('../../iterable/of-second');
-module.exports = secondToIterable(require('../accessor')(require('../../base/for-each-end-right')));
+module.exports = secondToIterable(require('../accessor')(require('@timelaps/n/for/each/end/right')));

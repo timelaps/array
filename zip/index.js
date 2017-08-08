@@ -1,6 +1,6 @@
 module.exports = zip;
 var reduce = require('../reduce');
-var forEach = require('../for/each');
+var forEach = require('@timelaps/n/for/each');
 
 function zip(lists) {
     return reduce(lists, function zipReducer(memo, list, listCount) {

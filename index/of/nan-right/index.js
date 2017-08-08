@@ -1,5 +1,5 @@
 var isNan = require('@timelaps/is/nan');
-var forEachEndRight = require('../../../base/for-each-end-right');
+var forEachEndRight = require('@timelaps/n/for/each/end/right');
 module.exports = indexOfNaN;
 
 function indexOfNaN(array, fromIndex, toIndex) {

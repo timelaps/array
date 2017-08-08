@@ -1,6 +1,6 @@
 var accessObjectAfter = require('../access-object-after'),
-    baseEach = require('../../base/each'),
+    baseEach = require('@timelaps/object/each/base'),
     iterateIn = require('@timelaps/object/iterate/in'),
-    forEachEnd = require('../../base/for-each-end'),
+    forEachEnd = require('@timelaps/n/for/each/end'),
     secondToIterable = require('../../iterable/of-second');
 module.exports = secondToIterable(baseEach(iterateIn, forEachEnd, accessObjectAfter));

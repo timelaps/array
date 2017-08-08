@@ -1,1 +1,1 @@
-module.exports = require('../maker')(require('../../for/own'), require('./iteratee'));
+module.exports = require('../maker')(require('@timelaps/n/for/own'), require('./iteratee'));

@@ -1,3 +1,3 @@
 var baseIndexOf = require('./base'),
-    forEachEnd = require('../../base/for-each-end');
+    forEachEnd = require('@timelaps/n/for/each/end');
 module.exports = baseIndexOf(forEachEnd);
