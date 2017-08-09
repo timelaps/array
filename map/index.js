@@ -1,1 +1,0 @@
-module.exports = require('./maker')(require('@timelaps/n/for/each'), require('./values/iteratee'), require('@timelaps/returns/array'));

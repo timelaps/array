@@ -1,4 +1,4 @@
-var map = require('../map');
+var map = require('@timelaps/n/map');
 var returnsArray = require('@timelaps/returns/array');
 var b = require('@timelaps/batterie');
 var gather = require('.');

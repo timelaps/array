@@ -1,5 +1,5 @@
 module.exports = results;
-var map = require('../map');
+var map = require('@timelaps/n/map');
 var result = require('@timelaps/fn/result');
 
 function results(array, method, arg) {

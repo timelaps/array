@@ -1,1 +1,0 @@
-module.exports = require('../../maker')(require('@timelaps/n/for/own/right'), require('../iteratee'));
