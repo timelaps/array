@@ -1,5 +1,5 @@
 module.exports = remove;
-var indexOf = require('./index/of');
+var indexOf = require('@timelaps/n/index/of');
 
 function remove(array, item) {
     var index = indexOf(array, item),
