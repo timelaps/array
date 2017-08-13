@@ -1,6 +1,8 @@
 var reduction = require('../reduction');
-module.exports = function makeReduce(dir_) {
+var returnsTrue = require('@timelaps/returns/true');
+module.exports = function makeReduce(dir_, validation_) {
+    var validation = validation_ || returnsTrue;
     return function reducer(obj, iteratee, memo) {
-        return reduction(obj, iteratee, memo, dir_, arguments.length < 3);
+        return validation(obj) && reduction(obj, iteratee, memo, dir_, arguments.length < 3);
     };
 };

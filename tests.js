@@ -40,6 +40,7 @@ require('./push/one/index.test');
 require('./reduce/index.test');
 require('./reduce/key-generator/index.test');
 require('./reduce/make/index.test');
+require('./reduce/own/index.test');
 require('./reduce/reduction/index.test');
 require('./reduce/right/index.test');
 require('./results/index.test');
