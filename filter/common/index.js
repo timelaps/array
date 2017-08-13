@@ -6,6 +6,7 @@ module.exports = function commonFilter(memo, passed) {
             if (matcher(bound(item, index, list))) {
                 passed(memo, item, index);
             }
+            return memo;
         }, memo());
     };
 };

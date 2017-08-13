@@ -6,6 +6,7 @@ module.exports = function concatUnique(list) {
             if (indexOf(memo, item) === -1) {
                 memo.push(item);
             }
+            return memo;
         }, memo);
     }, []);
 };

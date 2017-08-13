@@ -4,7 +4,7 @@ var forEach = require('@timelaps/n/for/each');
 
 function zip(lists) {
     return reduce(lists, function zipReducer(memo, list, listCount) {
-        return forEach(list, function zipIterator(item, index) {
+        forEach(list, function zipIterator(item, index) {
             var destination;
             // there is most certainly a more
             // efficient way to do this
@@ -13,5 +13,6 @@ function zip(lists) {
             }
             destination[listCount] = item;
         });
+        return memo;
     }, []);
 }

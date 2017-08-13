@@ -11,9 +11,7 @@ module.exports = function reduction(accessor, iteratee, memo_, dir, startsAt1) {
         }
     }
     while (!isUndefined(next = generated())) {
-        if (!isUndefined(nextMemo = iteratee(memo, accessor[next], next, accessor))) {
-            memo = nextMemo;
-        }
+        memo = iteratee(memo, accessor[next], next, accessor);
     }
     return memo;
 };
