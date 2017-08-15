@@ -23,10 +23,10 @@
   },
   "dependencies": {
     "@timelaps/constants": "^1.0.5",
-    "@timelaps/fn": "^1.0.8",
-    "@timelaps/is": "^1.0.7",
-    "@timelaps/n": "^1.0.22",
-    "@timelaps/object": "^1.0.19",
-    "@timelaps/to": "^1.0.6"
+    "@timelaps/fn": "^1.0.11",
+    "@timelaps/is": "^1.0.13",
+    "@timelaps/n": "^1.0.25",
+    "@timelaps/object": "^1.0.20",
+    "@timelaps/to": "^1.0.7"
   }
 }
