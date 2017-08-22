@@ -6,6 +6,6 @@ var isArray = require('@timelaps/is/array');
 var matchesProperty = require('@timelaps/object/matches/property');
 module.exports = toIterable;
 
-function toIterable(iteratee) {
-    return isFunction(iteratee) ? iteratee : (isArray(iteratee) ? matchesProperty(iteratee) : (isObject(iteratee) ? matches(iteratee) : property(iteratee)));
+function toIterable(iteratee, extent) {
+    return isFunction(iteratee) ? iteratee : (isArray(iteratee) ? matchesProperty(iteratee, extent) : (isObject(iteratee) ? matches(iteratee, extent) : property(iteratee, extent)));
 }
