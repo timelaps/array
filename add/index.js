@@ -1,5 +1,5 @@
 module.exports = add;
-var indexOf = require('./index/of');
+var indexOf = require('@timelaps/n/index/of');
 
 function add(array, item) {
     var missing = indexOf(array, item) === -1;

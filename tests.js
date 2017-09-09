@@ -1,3 +1,4 @@
+require('./add/index.test');
 require('./chunk/index.test');
 require('./combinations/index.test');
 require('./compact/index.test');
