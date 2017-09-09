@@ -12,4 +12,10 @@ b.describe('add', function () {
         add(array, 3);
         t.expect(array).toEqual([1, 2, 3]);
     });
+    b.it('returns true when it succeeds', function (t) {
+        t.expect(add([], 1)).toBeTrue();
+    });
+    b.it('returns false when it fails', function (t) {
+        t.expect(add([1], 1)).toBeFalse();
+    });
 });
