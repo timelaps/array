@@ -4,7 +4,8 @@ var toIterable = require('../../iterable');
 module.exports = function negatableFilter(array, object, string) {
     return function negatableFilterReducer(reduction, negation) {
         return function negatableFilterIterator(thing, iteratee) {
-            return (isArrayLike(thing) ? array : (isObject(thing) ? object : string))(thing, toIterable(iteratee), negation, reduction);
+            var method = isArrayLike(thing) ? array : (isObject(thing) ? object : string);
+            return method(thing, iteratee, negation, reduction);
         };
     };
 };

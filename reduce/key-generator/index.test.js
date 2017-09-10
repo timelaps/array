@@ -11,6 +11,7 @@ b.describe('keyGenerator', function () {
         t.expect(gen()).toBeUndefined();
     }, 4);
     b.it('can also do so for objects', function (t) {
+        debugger;
         var gen = keyGenerator({
             a: 1,
             b: 2,
