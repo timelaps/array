@@ -1,11 +1,24 @@
-module.exports = remove;
-var indexOf = require('@timelaps/n/index/of');
+module.exports = removeMany;
+var whilst = require('@timelaps/fn/whilst');
+var removeAt = require('./at');
+var returnsTrue = require('@timelaps/returns/true');
 
-function remove(array, item) {
-    var index = indexOf(array, item),
-        has = index !== -1;
-    if (has) {
-        array.splice(index, 1);
+function removeMany(array, mutableFilter_) {
+    var mutableFilter = mutableFilter_ || returnsTrue;
+    return whilst(filter, remover, []);
+
+    function remover(memo, counter) {
+        var idx = counter - memo.length;
+        var value = array[idx];
+        if (mutableFilter(value, counter, idx)) {
+
+            removeAt(array, idx);
+            memo.push(value);
+        }
+        return memo;
     }
-    return has;
+
+    function filter(memo, counter) {
+        return array.length - 1 >= counter - memo.length;
+    }
 }

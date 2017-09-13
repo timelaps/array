@@ -1,21 +1,20 @@
 var b = require('@timelaps/batterie');
-var remove = require('.');
-b.describe('remove', function () {
-    b.expect(remove).toBeFunction();
-    b.it('removes items from an array', function (t) {
-        var array = [1];
-        remove(array, 1);
-        t.expect(array).toEqual([]);
-    });
-    b.it('only removes the first item it encounters', function (t) {
-        var array = [1, 1];
-        remove(array, 1);
-        t.expect(array).toEqual([1]);
-    });
-    b.it('returns true when it succeeds', function (t) {
-        t.expect(remove([1], 1)).toBeTrue();
-    });
-    b.it('returns false when it failse', function (t) {
-        t.expect(remove([2, 4, 5, 2], 1)).toBeFalse();
-    });
+var removeMany = require('.');
+b.describe('removeMany', function () {
+    b.expect(removeMany).toBeFunction();
+    b.it('mutates the array', function (t) {
+        var array = [1, 2, 3, 4];
+        var copy = array.slice(0);
+        var result = removeMany(array);
+        t.expect(result).toEqual(copy);
+        t.expect(array).toBeEmptyArray();
+    }, 2);
+    b.it('mutates based on an optional fn', function (t) {
+        var array = [1, 2, 3, 4];
+        var result = removeMany(array, function (item) {
+            return item >= 3;
+        });
+        t.expect(result).toEqual([3, 4]);
+        t.expect(array).toEqual([1, 2]);
+    }, 2);
 });
