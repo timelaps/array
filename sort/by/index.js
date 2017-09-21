@@ -1,7 +1,7 @@
 module.exports = sortBy;
 var isFunction = require('@timelaps/is/function');
 var isGreaterThan = require('@timelaps/is/greater-than');
-var sort = require('..');
+var sort = require('../');
 var get = require('@timelaps/n/get');
 // arg1 is usually a string or number
 function sortBy(list, arg1_, handler_, reversed) {
