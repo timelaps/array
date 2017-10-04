@@ -1,4 +1,4 @@
-var matchesBinary = require('@timelaps/object/matches/binary');
+var matchesBinary = require('@timelaps/n/matches/binary');
 module.exports = function commonFilter(memo, passed) {
     return function filter(thing, bound, negated, reduction) {
         var matcher = matchesBinary(!negated);
