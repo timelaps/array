@@ -30,6 +30,7 @@ require('./flatten/with/index.test');
 require('./flatten/worker/index.test');
 require('./gather/index.test');
 require('./head/index.test');
+require('./includes/index.test');
 require('./index.test');
 require('./iterable/index.test');
 require('./join/index.test');
