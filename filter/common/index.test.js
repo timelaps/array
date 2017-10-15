@@ -1,6 +1,6 @@
 var filterCommon = require('.');
 var b = require('@timelaps/batterie');
-var reduce = require('../../reduce');
+var reduce = require('@timelaps/n/reduce');
 b.describe('filterCommon', function () {
     b.expect(filterCommon).toBeFunction();
     b.it('creates a curry environment for any object to be filtered', function (t) {

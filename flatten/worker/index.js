@@ -1,4 +1,4 @@
-var reduce = require('../../reduce');
+var reduce = require('@timelaps/n/reduce');
 module.exports = flattenWorker;
 
 function flattenWorker(list, filter, next) {

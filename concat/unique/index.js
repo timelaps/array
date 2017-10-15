@@ -1,4 +1,4 @@
-var reduce = require('../../reduce');
+var reduce = require('@timelaps/n/reduce');
 var indexOf = require('@timelaps/n/index/of');
 module.exports = function concatUnique(list) {
     return reduce(list, function (memo, argument) {
