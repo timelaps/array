@@ -1,3 +1,3 @@
 var filterMaker = require('../maker');
-var reduce = require('@timelaps/n/reduce/right');
+var reduce = require('../../reduce/right');
 module.exports = filterMaker(reduce);

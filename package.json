@@ -25,7 +25,7 @@
     "@timelaps/constants": "^1.0.6",
     "@timelaps/fn": "^1.0.19",
     "@timelaps/is": "^1.0.15",
-    "@timelaps/n": "^1.0.33",
+    "@timelaps/n": "^1.0.39",
     "@timelaps/object": "^1.0.22",
     "@timelaps/to": "^1.0.11"
   }

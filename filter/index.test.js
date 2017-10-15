@@ -15,41 +15,4 @@ b.describe('filter', function () {
         });
         t.expect(list).toEqual([2, 6]);
     });
-    b.it('can also use objects to filter', function (t) {
-        t.expect(filter([{
-            one: 1
-        }, {
-            two: 2
-        }, {
-            one: 2
-        }, {
-            one: 2,
-            two: 2
-        }, {
-            one: 1,
-            two: 2
-        }], {
-            one: 1
-        })).toEqual([{
-            one: 1
-        }, {
-            one: 1,
-            two: 2
-        }]);
-    });
-    b.it('can use arrays to filter', function (t) {
-        t.expect(filter([{
-            one: 1
-        }, {
-            two: 2
-        }, {
-            one: 1,
-            two: 2
-        }], ['one', 1])).toEqual([{
-            one: 1
-        }, {
-            one: 1,
-            two: 2
-        }]);
-    });
 });
